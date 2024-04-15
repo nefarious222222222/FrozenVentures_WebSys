@@ -1,0 +1,231 @@
+/* Global styles */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-violet: #501a83;
+  --color-stone: #becdd6;
+  --color-primary-text: #111111;
+  --color-secondary-text: #383838;
+
+  --font-primary: 'Open Sans';
+  --font-secondary: 'Raleway';
+}
+
+* {
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+}
+
+section {
+    padding: 20px 50px;
+}
+
+/* nav bar css */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+
+  h1 {
+    font-size: 2rem;
+    color: var(--color-violet);
+  }
+
+  .search-bar {
+    border: solid var(--color-violet) 2px;
+    outline: none;
+    border-radius: 20px;
+    height: fit-content;
+    width: 500px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+  }
+
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    button {
+      font-size: 1.15rem;
+      font-weight: 800;
+
+      i {
+        font-size: 2rem;
+      }
+    }
+
+    .cs-button {
+      background: none;
+      border: none;
+      border-radius: 10px;
+      color: var(--color-violet);
+      padding: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .cs-button:hover {
+      background-color: var(--color-violet);
+      color: var(--color-stone);
+      cursor: pointer;
+    }
+
+    .sign-button {
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      background-color: var(--color-stone);
+      color: var(--color-violet);
+      transition: all 0.3s ease;
+    }
+
+    .sign-button:hover {
+      background-color: var(--color-violet);
+      color: var(--color-stone);
+      cursor: pointer;
+    }
+  }
+}
+
+/* Hero css */
+.hero {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .text-container {
+        margin: 10px 0;
+        h2 {
+            color: var(--color-primary-text);
+            font-size: 3rem;
+        }
+
+        p {
+            color: var(--color-secondary-text);
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.hero .button-container {
+    display: flex;
+    gap: 20px;
+    
+    button {
+        border: none;
+        border-radius: 7px;
+        padding: 5px 15px;
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--color-violet);
+        background-color: var(--color-stone);
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        color: var(--color-stone);
+        background-color: var(--color-violet);
+        cursor: pointer;
+    }
+}
+
+/* Product Catalog Css */
+.product-catalog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    img {
+        border-radius: 20px;
+        width: 400px;
+    }
+
+    .text-container {
+        h3 {
+            font-size: 1.5rem;
+            color: var(--color-primary-text);
+        }
+
+        p {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-secondary-text);
+        }
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+
+        .cart-button {
+            background: none;
+            border: none;
+            border-radius: 5px;
+            padding: 2px 4px;
+            font-size: 1.5rem;
+            color: var(--color-violet);
+            transition: all 0.3s ease;
+        }
+
+        .cart-button:hover {
+            color: var(--color-stone);
+            background-color: var(--color-violet);
+            cursor: pointer;
+        }
+
+        .buy-button {
+            border: none;
+            border-radius: 5px;
+            padding: 5px 15px;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--color-violet);
+            background-color: var(--color-stone);
+            transition: all 0.3s ease;
+        }
+
+        .buy-button:hover {
+            color: var(--color-stone);
+            background-color: var(--color-violet);
+            cursor: pointer;
+        }
+    }
+}
+
+/* Page Selector Css */
+.page-selector {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    button {
+        border: none;
+        background: none;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+}
