@@ -77,6 +77,10 @@ body {
         }
     }
 
+    .title-container:hover {
+        cursor: pointer;
+    }
+
     .username-container,.password-container {
         display: flex;
         flex-direction: column;
