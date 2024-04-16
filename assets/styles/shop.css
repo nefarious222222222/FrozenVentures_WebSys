@@ -113,245 +113,160 @@ nav {
 .hero {
   display: flex;
   flex-direction: column;
-  padding-bottom: 75px;
-
-  .first-container {
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  .second-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 0 20px 0;
-
-    h2 {
-      font-size: 4rem;
-      color: var(--color-primary-text);
-    }
-
-    p {
-      font-size: 2rem;
-      font-weight: 500;
-      color: var(--color-secondary-text);
-    }
-  }
-
-  .third-container {
-    margin: 0 auto;
-    padding: 0 100px;
-    display: grid;
-    grid-template-columns: repeat(3, 500px);
-    grid-template-rows: repeat(2, 250px);
-    grid-gap: 30px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-      object-fit: cover;
-    }
-
-    .item1 {
-      grid-area: 1 / 1 / 3 / 2;
-    }
-
-    .item4 {
-      grid-area: 2 / 2 / -1 / -1;
-    }
-      
-  }
-}
-
-/* Top Products Css */
-.top-container {
-  padding: 75px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  .text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-
-    h2 {
-      font-size: 3rem;
-      color: var(--color-primary-text);
-    }
-
-    .type-container {
-      display: flex;
-      gap: 20px;
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--color-secondary-text);
-
-      p {
-        transition: all 0.3s ease;
-        padding: 5px 10px;
-        border-radius: 10px;
-      }
-
-      p:hover {
-        color: var(--color-violet);
-        background-color: var(--color-stone);
-        cursor: pointer;
-      }
-    }
-  }
-}
-
-.top-products {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-
-  .product-container {
-    background-color: var(--color-pale-violet);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 400px;
-    border-radius: 20px;
-  
-    img {
-      width: 100%;
-      border-radius: 20px;
-    }
-  
-    .desc-container {
-      margin-left: 20px;
-  
-      h3 {
-        font-size: 1.5rem;
-      }
-  
-      p {
-        font-size: 1.25rem;
-        font-weight: 600;
-        color: var(--color-secondary-text);
-      }
-    }
-  
-    .button-container {
-      display: flex;
-      justify-content: flex-end;
-      gap: 20px;
-      margin: 0 20px 20px 0;
-  
-      .cart-button {
-        font-size: 1.5rem;
-      }
-  
-      button {
-        padding: 0 15px;
-        font-size: 1rem;
-        font-weight: 800;
-        border: none;
-        border-radius: 10px;
-        background-color: var(--color-stone);
-        color: var(--color-violet);
-        transition: all 0.3s ease;
-      }
-
-      button:hover {
-        background-color: var(--color-violet);
-        color: var(--color-stone);
-        cursor: pointer;
-      }
-    }
-  }
-}
-
-/* More Css */
-.more-container {
-  display: flex;
-  align-items: center;
-  padding: 75px 250px;
-  gap: 100px;
-  background-color: var(--color-pale-violet);
+  padding: 20px 40px;
 
   img {
-    width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
   }
+}
 
-  .tb-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+/* Container */
+.tf-container {
+  margin: 40px 0 20px 0;
+  padding: 0 40px;
 
+  .text-container {
     h2 {
-      font-size: 3rem;
       color: var(--color-primary-text);
+      font-size: 4rem;
     }
 
     p {
-      font-size: 1.5rem;
-      font-weight: 500;
       color: var(--color-secondary-text);
+      font-weight: 600;
+      font-size: 2rem;
     }
+  }
+
+  .filter-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0 0 0;
 
     button {
-      width: fit-content;
-      font-size: 1.25rem;
-      font-weight: 700;
-      background-color: var(--color-stone);
-      color: var(--color-violet);
       border: none;
-      border-radius: 10px;
-      padding: 5px 20px;
+      border-radius: 7px;
+      padding: 5px 15px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-violet);
+      background-color: var(--color-stone);
       transition: all 0.3s ease;
     }
 
     button:hover {
-      background-color: var(--color-violet);
       color: var(--color-stone);
+      background-color: var(--color-violet);
       cursor: pointer;
     }
   }
 }
 
-/* Service Css */
-.service-container {
-  padding: 75px 50px;
+/* Product Catalog Css */
+.product-catalog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 40px;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--color-pale-violet);
+  width: 400px;
+  border-radius: 20px;
+
+  img {
+    border-radius: 20px;
+    width: 100%;
+  }
 
   .text-container {
-    margin-bottom: 20px;
-    h2 {
-      font-size: 3rem;
+    margin-left: 20px;
+
+    h3 {
+      font-size: 1.5rem;
       color: var(--color-primary-text);
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
+      font-weight: 600;
       color: var(--color-secondary-text);
     }
   }
-  
-  .services {
+
+  .button-container {
     display: flex;
-    justify-content: space-between;
-  
-    .service {
-      border-radius: 20px;
-      padding: 40px 50px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, .1);
-  
-      h3 {
-        font-size: 2rem;
-        color: var(--color-violet);
-      }
-  
-      p {
-        color: var(--color-secondary-text);
-      }
+    justify-content: flex-end;
+    gap: 20px;
+    margin: 0 20px 20px 0;
+
+    .cart-button {
+      border: none;
+      border-radius: 5px;
+      padding: 2px 6px;
+      font-size: 1.5rem;
+      background-color: var(--color-stone);
+      color: var(--color-violet);
+      transition: all 0.3s ease;
     }
+
+    .cart-button:hover {
+      color: var(--color-stone);
+      background-color: var(--color-violet);
+      cursor: pointer;
+    }
+
+    .buy-button {
+      border: none;
+      border-radius: 5px;
+      padding: 5px 15px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-violet);
+      background-color: var(--color-stone);
+      transition: all 0.3s ease;
+    }
+
+    .buy-button:hover {
+      color: var(--color-stone);
+      background-color: var(--color-violet);
+      cursor: pointer;
+    }
+  }
+}
+
+/* Page Selector Css */
+.page-selector {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  .page-viewer {
+    display: flex;
+    gap: 10px;
+
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  button {
+    border: none;
+    background: none;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  button:hover {
+    cursor: pointer;
   }
 }
 
