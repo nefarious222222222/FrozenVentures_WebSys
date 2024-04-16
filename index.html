@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FrozenVentures</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.ico" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -12,10 +13,15 @@
   </head>
   <body>
     <nav>
-      <h1>FrozenVentures</h1>
+      <div class="title-container">
+        <img src="assets/logo.png" alt="Logo" />
+        <h1>FrozenVentures</h1>
+      </div>
+
       <input type="text" class="search-bar" />
+
       <div class="nav-buttons">
-        <button class="cs-button"><i class='bx bxs-cart' ></i></button>
+        <button class="cs-button"><i class="bx bxs-cart"></i></button>
         <button class="cs-button"><i class="bx bxs-store-alt"></i></button>
         <button class="sign-button">Sign In</button>
         <button class="sign-button">Sign Up</button>
@@ -23,102 +29,181 @@
     </nav>
 
     <section class="hero">
-      <div class="carousell-container">
+      <div class="first-container">
         <img src="assets/0.jpg" alt="Sheesh" />
       </div>
 
-      <div class="text-container">
-        <h2>Shop</h2>
-
-        <p>Venture the various flavors</p>
+      <div class="second-container">
+        <h2>Flavors</h2>
+        <p>Vaious flavors to suit your preferences</p>
       </div>
 
-      <div class="button-container">
-        <button>Tsikulit</button>
-        <button>Mancha</button>
-        <button>Banilat</button>
-        <button>Mabatong Daan</button>
-        <button>Chongke n' Cream</button>
-        <button>No Peanuts</button>
+      <div class="third-container">
+        <img class="item1" src="assets/1.jpg" alt="" />
+        <img class="item2" src="assets/2.jpg" alt="" />
+        <img class="item3" src="assets/3.jpg" alt="" />
+        <img class="item4" src="assets/4.jpg" alt="" />
       </div>
     </section>
 
-    <section class="product-catalog">
-      <div class="product-container">
-        <img src="assets/1.jpg" alt="AysKrim">
+    <section class="top-container">
+      <div class="text-container">
+        <h2>Top Products</h2>
 
-        <div class="text-container">
-            <h3>Tsukulit</h3>
+        <div class="type-container">
+          <p>Daily</p>
+          <p>Weekly</p>
+          <p>Monthly</p>
+        </div>
+      </div>
+
+      <div class="top-products">
+        <div class="product-container">
+          <img src="assets/1.jpg" alt="product" />
+
+          <div class="desc-container">
+            <h3>Mabatong Daan</h3>
             <p>Impakto</p>
             <p>$69.99</p>
-        </div>
+          </div>
 
-        <div class="button-container">
-            <button class="cart-button"><i class='bx bxs-cart-add' ></i></button>
+          <div class="button-container">
+            <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
             <button class="buy-button">Buy Now</button>
+          </div>
         </div>
-      </div>
 
-      <div class="product-container">
-        <img src="assets/2.jpg" alt="AysKrim">
+        <div class="product-container">
+          <img src="assets/2.jpg" alt="product" />
 
-        <div class="text-container">
+          <div class="desc-container">
             <h3>Banilat</h3>
-            <p>Selecto</p>
+            <p>Taemood</p>
             <p>$69.99</p>
-        </div>
+          </div>
 
-        <div class="button-container">
-            <button class="cart-button"><i class='bx bxs-cart-add' ></i></button>
+          <div class="button-container">
+            <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
             <button class="buy-button">Buy Now</button>
+          </div>
         </div>
-      </div>
 
-      <div class="product-container">
-        <img src="assets/3.jpg" alt="AysKrim">
+        <div class="product-container">
+          <img src="assets/3.jpg" alt="product" />
 
-        <div class="text-container">
-            <h3>Mabaton Daan</h3>
-            <p>You're Road</p>
+          <div class="desc-container">
+            <h3>Tsikulit</h3>
+            <p>Tahee</p>
             <p>$69.99</p>
-        </div>
+          </div>
 
-        <div class="button-container">
-            <button class="cart-button"><i class='bx bxs-cart-add' ></i></button>
+          <div class="button-container">
+            <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
             <button class="buy-button">Buy Now</button>
+          </div>
         </div>
-      </div>
 
-      <div class="product-container">
-        <img src="assets/4.jpg" alt="AysKrim">
+        <div class="product-container">
+          <img src="assets/4.jpg" alt="product" />
 
-        <div class="text-container">
+          <div class="desc-container">
             <h3>Mancha</h3>
             <p>Daemoo</p>
             <p>$69.99</p>
-        </div>
+          </div>
 
-        <div class="button-container">
-            <button class="cart-button"><i class='bx bxs-cart-add' ></i></button>
+          <div class="button-container">
+            <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
             <button class="buy-button">Buy Now</button>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="page-selector">
-      <div class="prev-container">
-        <button><i class='bx bx-left-arrow-alt' ></i> Previous</button>
+    <section class="more-container">
+      <div class="tb-container">
+        <h2>Need More Flavors?</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
+          nesciunt odio vitae quia recusandae expedita maxime ad dolor quisquam
+          tempora velit fuga, officiis, dolorem repellendus! Nesciunt at
+          incidunt possimus. Eum.
+        </p>
+        <button>More Flavors</button>
       </div>
 
-      <div class="page-viewer">
-        <p>1,  2,  3,  ...</p>
+      <img src="assets/5.png" alt="" />
+    </section>
+
+    <section class="service-container">
+      <div class="text-container">
+        <h2>Services</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, deserunt!</p>
       </div>
 
-      <div class="next-contianer">
-        <button>Next <i class='bx bx-right-arrow-alt' ></i></button>
+      <div class="services">
+        <div class="service">
+          <h3><i class='bx bxs-package' ></i> Delivery</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+  
+        <div class="service">
+          <h3><i class='bx bx-money' ></i> Payment</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+  
+        <div class="service">
+          <h3><i class='bx bxs-donate-heart' ></i> Inquiry</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
       </div>
     </section>
 
-    <footer></footer>
+    <footer>
+      <div class="about-container">
+        <div class="logo-container">
+          <img src="assets/logo.png" alt="Logo" />
+          <h1>FrozenVentures</h1>
+        </div>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          neque veniam perferendis nihil fuga, corporis quidem voluptatum iusto,
+          modi quod minus mollitia maxime inventore ad recusandae iure deserunt
+          laborum sint!
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <h4>Contact Us</h4>
+
+        <p>#420 Weederoo Street Showbu City</p>
+
+        <p>frozenventures@icecream.com</p>
+
+        <p>+63 9069420911</p>
+      </div>
+
+      <div class="social-container">
+        <h4>Follow Us</h4>
+
+        <div class="container">
+          <div class="fb-container">
+            <i class="bx bxl-facebook-square"></i>
+            <p>@FrozenVentures</p>
+          </div>
+
+          <div class="ig-container">
+            <i class="bx bxl-instagram-alt"></i>
+            <p>@FrozenVentures</p>
+          </div>
+
+          <div class="twitter-container">
+            <i class="bx bxl-twitter"></i>
+            <p>@FrozenVentures</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
