@@ -9,7 +9,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/styles/cart.css" />
+    <link rel="stylesheet" href="../assets/styles/order.css" />
   </head>
   <body>
     <nav>
@@ -27,114 +27,75 @@
       </div>
 
       <div class="nav-buttons">
+        <button class="cs-button" onclick="window.location.href='cart.html'">
+          <i class="bx bxs-cart"></i>
+        </button>
         <button
           class="cs-button"
           onclick="window.location.href='../../index.html'"
         >
           <i class="bx bxs-home-alt-2"></i>
         </button>
-        <button class="cs-button" onclick="window.location.href='shop.html'">
-          <i class="bx bxs-store-alt"></i>
-        </button>
-
         <button
           class="sign-button"
-          onclick="window.location.href='../pages/sign-in.html'"
+          onclick="window.location.href='pages/sign-in.html'"
         >
           Sign In
         </button>
         <button
           class="sign-button"
-          onclick="window.location.href='../pages/sign-up.html'"
+          onclick="window.location.href='pages/sign-up.html'"
         >
           Sign Up
         </button>
       </div>
     </nav>
 
-    <section class="cart-container">
-      <h1>My Cart</h1>
+    <div class="order-container">
+      <div class="top-container">
+        <img src="../assets/images/1.jpg" alt="" />
 
-      <div class="my-cart">
-        <div class="label-container">
-          <p class="item item1">Product</p>
-          <p class="item item2">Price</p>
-          <p class="item item3">Quantity</p>
-          <p class="item item4">Total</p>
-        </div>
-
-        <div class="contain-container">
-          <div class="product-container">
-            <div class="product">
-              <img src="../assets/images/1.jpg" alt="AysKrim" />
-
-              <div class="description">
-                <h3>Mabatong Daan</h3>
-                <h4>Impakto</h4>
-                <p>Gallon</p>
-              </div>
+        <div class="right-container">
+          <div class="tr-container">
+            <div class="product-info">
+              <h2>Mabatong Daan</h2>
+              <p>Impakto</p>
             </div>
 
-            <div class="price-container">
-              <p>$69.99</p>
-            </div>
+            <h2>$69.99</h2>
+          </div>
 
-            <div class="qty-container">
-              <i class="bx bx-minus"></i>
-              <p>1</p>
-              <i class="bx bx-plus"></i>
-            </div>
-
-            <div class="total-container">
-              <p>$69.99</p>
-            </div>
-
-            <div class="button-container">
-              <i class="bx bxs-edit"></i>
-              <i class="bx bxs-trash"></i>
+          <div class="br-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              delectus facere magni placeat fugiat itaque labore eaque sunt nemo
+              inventore, illum adipisci ducimus aliquid quod! Doloribus
+              perspiciatis eum aspernatur sequi!
+            </p>
+    
+            <div class="sizes-container">
+                <button>1st Size</button>
+                <button>2nd Size</button>
+                <button>3rd Size</button>
+                <button>4th Size</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="checkout-container">
-      <div class="shipping-mode">
-        <h2>Choose Shipping Mode:</h2>
+      <div class="bot-container">
+        <div class="qty-container">
+            <i class='bx bx-minus' ></i>
+            <h3>1</h3>
+            <i class='bx bx-plus' ></i>
+        </div>
 
-        <form class="button-container">
-          <label>
-            <input type="radio" name="shipping" value="pickup" />
-            Store Pick Up • <span>Free</span>
-          </label>
-          <label>
-            <input type="radio" name="shipping" value="delivery" />
-            Delivery • <span>$2.99</span>
-          </label>
-        </form>
+        <div class="button-container">
+            <button onclick="window.location.href='cart.html'">Add to Cart</button>
+            <button onclick="window.location.href='billing.html'">Buy Now</button>
+        </div>
       </div>
-
-      <div class="total-container">
-        <div class="sub-total">
-            <p class="label">Sub Total</p>
-            <p class="price">$69.99</p>
-        </div>
-
-        <div class="shipping">
-            <p class="label">Shipping</p>
-            <p class="price">$2.99</p>
-        </div>
-
-        <div class="line"></div>
-
-        <div class="total">
-            <p class="label">Total</p>
-            <p class="price">$72.98</p>
-        </div>
-
-        <button>Check Out Now</button>
-      </div>
-    </section>
+    </div>
 
     <footer>
         <div class="about-container">
