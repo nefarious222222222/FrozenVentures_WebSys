@@ -274,6 +274,7 @@ nav {
     gap: 5px;
     font-size: 1.25rem;
     font-weight: 600;
+    color: var(--color-secondary-text);
   }
 }
 
