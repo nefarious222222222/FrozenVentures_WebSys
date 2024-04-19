@@ -1,0 +1,204 @@
+/* Global styles */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-violet: #533d70;
+  --color-stone: #becdd6;
+  --color-pale-violet: #b8abd4;
+  --color-light-gray: #e7e7e7;
+  --color-dark-gray: #474747;
+
+  --color-primary-text: #111111;
+  --color-secondary-text: #363636;
+
+  --font-primary: "Open Sans";
+  --font-secondary: "Raleway";
+}
+
+* {
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+}
+
+/* nav bar css */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+
+  .bx-menu {
+    font-size: 2rem;
+  }
+
+  .bx-menu:hover {
+    cursor: pointer;
+  }
+
+  .search-bar {
+    border: solid var(--color-violet) 2px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: black;
+
+    input {
+      outline: none;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      width: 400px;
+    }
+
+    button {
+      background: none;
+      border: none;
+      font-size: 1rem;
+    }
+  }
+
+  .profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      width: 50px;
+    }
+  }
+}
+
+/* Side bar css */
+.side-bar {
+  background-color: var(--color-pale-violet);
+  position: fixed;
+  top: 0;
+  width: 250px;
+  left: -330px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px 0 20px;
+  transition: all 0.3s ease;
+
+  header {
+    color: var(--color-violet);
+    margin-top: 20px;
+    font-size: 1.75rem;
+    font-weight: 900;
+    transition: all 0.3s ease;
+  }
+
+  header:hover {
+    color: var(--color-stone);
+    cursor: pointer;
+  }
+
+  * {
+    color: var(--color-primary-text);
+    font-size: 1.25rem;
+    font-weight: 800;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .lists-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    .first-list ul,
+    .second-list ul {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      li a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      i {
+        transition: all 0.3s ease;
+      }
+    }
+
+    .second-list {
+      padding-top: 30px;
+      border-top: solid 2px black;
+    }
+
+    ul a {
+      transition: all 0.3s ease;
+    }
+
+    ul li:hover a {
+      cursor: pointer;
+      padding-left: 10px;
+      color: var(--color-violet);
+
+      i {
+        color: var(--color-violet);
+      }
+    }
+  }
+}
+
+/* Burger Css */
+#check {
+  display: none;
+}
+
+label #btn,
+label #cancel {
+  font-size: 2.5rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+label #btn {
+  background-color: var(--color-stone);
+  color: var(--color-violet);
+  left: 30px;
+  top: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+label #btn:hover {
+  color: var(--color-stone);
+  background-color: var(--color-violet);
+}
+
+label #cancel {
+  border-radius: 10px;
+  background-color: var(--color-stone);
+  color: var(--color-violet);
+  font-weight: 900;
+  z-index: 1111;
+  left: -290px;
+  top: 20px;
+  transition: all 0.3s ease;
+}
+
+label #cancel:hover {
+  color: var(--color-stone);
+  background-color: var(--color-violet);
+}
+
+#check:checked ~ .side-bar {
+  left: 0;
+}
+
+#check:checked ~ label #btn {
+  left: 310px;
+  opacity: 0;
+}
+
+#check:checked ~ label #cancel {
+  left: 270px;
+}
