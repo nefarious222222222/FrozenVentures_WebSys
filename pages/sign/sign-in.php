@@ -22,22 +22,23 @@
                 <img src="../../assets/images/logo.png" alt="logo">
                 <h1>FrozenVentures</h1>
             </div>
-
+            <form action="../../server/signin.php" method="post">
             <div class="input-container">
                 <h4>Username:</h4>
-                <input type="text">
+                <input type="text" name="username">
             </div>
 
             <div class="input-container">
                 <h4>Password:</h4>
-                <input type="text">
+                <input type="password" name="password">
             </div>
+     
 
             <div class="button-container">
-                <button>Sign In</button>
+                <button type="submit">Sign In</button>
                 <p>Dont Have An Account? <a href="sign-Up.html">Sign Up</a></p>
             </div>
-
+            </form>
             <div class="other-sign">
                 <div class="text-container">
                     <div class="line"></div>
