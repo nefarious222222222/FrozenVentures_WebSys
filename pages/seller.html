@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/styles/seller.css" />
+    
   </head>
   <body>
     <nav>
@@ -34,7 +35,7 @@
     </label>
 
     <div class="side-bar">
-      <header onclick="toggleHome()">FV Manage Shop</header>
+      <header>FV Manage Shop</header>
 
       <div class="lists-container">
         <div class="first-list">
@@ -68,11 +69,7 @@
       </div>
     </div>
 
-    <section class="home-container" id="home">
-      <h1>Manage Shop</h1>
-    </section>
-
-    <section class="dashboard-container" id="dashboard" style="display: none;">
+    <section class="dashboard-container" id="dashboard">
       <h1>Dashboard</h1>
     </section>
 
@@ -93,30 +90,7 @@
     </section>
 
     <script>
-      function toggleHome() {
-        var home = document.getElementById("home");
-        home.style.display = "block";
-        
-        var dashboard = document.getElementById("dashboard");
-        dashboard.style.display = "none";
-
-        var order = document.getElementById("order");
-        order.style.display = "none";
-
-        var message = document.getElementById("message-inbox");
-        message.style.display = "none";
-
-        var inventory = document.getElementById("inventory");
-        inventory.style.display = "none";
-
-        var settings = document.getElementById("settings");
-        settings.style.display = "none";
-      }
-
       function toggleDash() {
-        var home = document.getElementById("home");
-        home.style.display = "none";
-
         var dashboard = document.getElementById("dashboard");
         dashboard.style.display = "flex";
 
@@ -134,9 +108,6 @@
       }
 
       function toggleOrder() {
-        var home = document.getElementById("home");
-        home.style.display = "none";
-
         var dashboard = document.getElementById("dashboard");
         dashboard.style.display = "none";
 
@@ -154,9 +125,6 @@
       }
 
       function toggleMessage() {
-        var home = document.getElementById("home");
-        home.style.display = "none";
-
         var dashboard = document.getElementById("dashboard");
         dashboard.style.display = "none";
 
@@ -174,9 +142,6 @@
       }
 
       function toggleInventory() {
-        var home = document.getElementById("home");
-        home.style.display = "none";
-
         var dashboard = document.getElementById("dashboard");
         dashboard.style.display = "none";
 
@@ -194,9 +159,6 @@
       }
 
       function toggleSettings() {
-        var home = document.getElementById("home");
-        home.style.display = "none";
-
         var dashboard = document.getElementById("dashboard");
         dashboard.style.display = "none";
 
