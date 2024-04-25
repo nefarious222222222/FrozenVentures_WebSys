@@ -103,7 +103,7 @@ body {
 
     input[type="password"] {
       width: 230px;
-      padding-left: 30px;
+      padding-right: 30px;
     }
 
     .container {
