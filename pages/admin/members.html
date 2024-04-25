@@ -96,7 +96,7 @@
 
             <div class="card-footer">
               <p><span>10:59 PM · Apr 25, 2024</span></p>
-              <button>View More</button>
+              <button onclick="showMember1()">View More</button>
             </div>
           </div>
 
@@ -112,13 +112,14 @@
 
             <div class="card-body">
               <p>
-                As the database admin, I, Joschua G. Ordonio, will manage the database operations for FrozenVentures.
+                As the database admin, I, Joschua G. Ordonio, will manage the
+                database operations for FrozenVentures.
               </p>
             </div>
 
             <div class="card-footer">
               <p><span>7:20 AM · Apr 26, 2024</span></p>
-              <button>View More</button>
+              <button onclick="showMember2()">View More</button>
             </div>
           </div>
 
@@ -134,13 +135,14 @@
 
             <div class="card-body">
               <p>
-                In my role as the backend developer, I, Edzel John R. Angeles, will ensure the seamless functionality of FrozenVentures.
+                In my role as the backend developer, I, Edzel John R. Angeles,
+                will ensure the seamless functionality of FrozenVentures.
               </p>
             </div>
 
             <div class="card-footer">
               <p><span>9:56 PM · Apr 21, 2024</span></p>
-              <button>View More</button>
+              <button onclick="showMember3()">View More</button>
             </div>
           </div>
 
@@ -156,13 +158,15 @@
 
             <div class="card-body">
               <p>
-                In my capacity as the system analyst, I, Rhis Miguel A. Dela Cruz, will analyze and design the system architecture for FrozenVentures.
+                In my capacity as the system analyst, I, Rhis Miguel A. Dela
+                Cruz, will analyze and design the system architecture for
+                FrozenVentures.
               </p>
             </div>
 
             <div class="card-footer">
               <p><span>8:01 AM · Apr 24, 2024</span></p>
-              <button>View More</button>
+              <button onclick="showMember4()">View More</button>
             </div>
           </div>
         </div>
@@ -170,18 +174,18 @@
 
       <div class="member-details">
         <div class="card-container">
-          <div class="card card1">
+          <div class="card card1" id="card1">
             <div class="img-card">
-              <img src="../../assets/images/member2.jpg" alt="">
+              <img src="../../assets/images/member2.jpg" alt="" />
             </div>
-  
+
             <div class="info-card">
               <div class="first-info">
                 <p><span>Name:</span> Vince Jeremy P. Canaria</p>
                 <p><span>Gender:</span> Male</p>
                 <p><span>Age:</span> 20 Years Old</p>
               </div>
-              
+
               <div class="second-info">
                 <p><span>Address:</span> Cupang Proper Balanga City, Bataan</p>
                 <p><span>Email:</span> vjpcanaria@bpsu.edu.ph</p>
@@ -191,35 +195,118 @@
 
             <div class="role-card">
               <p><span>Frontend Developer</span></p>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nisi doloremque nobis commodi suscipit, temporibus voluptatem vero recusandae expedita pariatur.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
+                nisi doloremque nobis commodi suscipit, temporibus voluptatem
+                vero recusandae expedita pariatur.
+              </p>
             </div>
-          
+
             <div class="button-container">
-              <button>Close</button>
+              <button onclick="closeMember1()">Close</button>
             </div>
           </div>
 
+          <div class="card card2" id="card2">
+            <div class="img-card">
+              <img src="../../assets/images/member4.jpg" alt="" />
+            </div>
 
+            <div class="info-card">
+              <div class="first-info">
+                <p><span>Name:</span> Joschua G. Ordonio</p>
+                <p><span>Gender:</span> Male</p>
+                <p><span>Age:</span> 21 Years Old</p>
+              </div>
+
+              <div class="second-info">
+                <p><span>Address:</span> Cataning Balanga City, Bataan</p>
+                <p><span>Email:</span> jgordonio@bpsu.edu.ph</p>
+                <p><span>Role:</span> Database Admin</p>
+              </div>
+            </div>
+
+            <div class="role-card">
+              <p><span>Database Admin</span></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
+                nisi doloremque nobis commodi suscipit, temporibus voluptatem
+                vero recusandae expedita pariatur.
+              </p>
+            </div>
+
+            <div class="button-container">
+              <button onclick="closeMember2()">Close</button>
+            </div>
+          </div>
+
+          <div class="card card3" id="card3">
+            <div class="img-card">
+              <img src="../../assets/images/member1.jpg" alt="" />
+            </div>
+
+            <div class="info-card">
+              <div class="first-info">
+                <p><span>Name:</span> Edzel John R. Angeles</p>
+                <p><span>Gender:</span> Male</p>
+                <p><span>Age:</span> 23 Years Old</p>
+              </div>
+
+              <div class="second-info">
+                <p><span>Address:</span> Sapa Samal, Bataan</p>
+                <p><span>Email:</span> ejrangeles@bpsu.edu.ph</p>
+                <p><span>Role:</span> Backend Developer</p>
+              </div>
+            </div>
+
+            <div class="role-card">
+              <p><span>Backend Developer</span></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
+                nisi doloremque nobis commodi suscipit, temporibus voluptatem
+                vero recusandae expedita pariatur.
+              </p>
+            </div>
+
+            <div class="button-container">
+              <button onclick="closeMember3()">Close</button>
+            </div>
+          </div>
+
+          <div class="card card4" id="card4">
+            <div class="img-card">
+              <img src="../../assets/images/member3.jpg" alt="" />
+            </div>
+
+            <div class="info-card">
+              <div class="first-info">
+                <p><span>Name:</span> Rhis Miguel A. Dela Cruz</p>
+                <p><span>Gender:</span> Male</p>
+                <p><span>Age:</span> 20 Years Old</p>
+              </div>
+
+              <div class="second-info">
+                <p><span>Address:</span> Ibaba Samal, Bataan</p>
+                <p><span>Email:</span> rmadelacruz@bpsu.edu.ph</p>
+                <p><span>Role:</span> System Analyst</p>
+              </div>
+            </div>
+
+            <div class="role-card">
+              <p><span>System Analyst</span></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio repellendus reprehenderit corporis, esse voluptates laboriosam maiores sit quas vel iure provident neque facere nemo molestias optio modi earum nam dolores illum doloremque doloribus voluptas ducimus reiciendis. Quisquam possimus ipsum laudantium, neque dicta harum veritatis iure necessitatibus culpa! Autem aliquid libero quisquam illum illo, sequi beatae temporibus dolor deserunt natus enim officia quidem dicta adipisci sunt iusto blanditiis iure omnis eos corrupti modi sit earum. Hic amet, molestias perferendis illum distinctio, omnis officia quasi nobis sit dolores natus tenetur corporis cupiditate doloremque non ab voluptatum earum sapiente explicabo architecto numquam.
+              </p>
+            </div>
+
+            <div class="button-container">
+              <button onclick="closeMember4()">Close</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <script>
-      let toggle = document.querySelector(".toggle");
-      let navigation = document.querySelector(".navigation");
-      let main = document.querySelector(".main-container");
-
-      toggle.onclick = function () {
-        navigation.classList.toggle("active");
-        main.classList.toggle("active");
-      };
-
-      let list = document.querySelectorAll(".navigation li");
-      function activeLink() {
-        list.forEach((item) => item.classList.remove("hovered"));
-        this.classList.add("hovered");
-      }
-      list.forEach((item) => item.addEventListener("mouseover", activeLink));
-    </script>
+    <script src="../../assets/js/members.js"></script>
   </body>
 </html>
