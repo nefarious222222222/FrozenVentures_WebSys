@@ -40,7 +40,7 @@
 
             <div class="input-container">
                 <h4>Password:</h4>
-                <input type="text">
+                <input class="password" type="password">
             </div>
 
             <div class="button-container">
