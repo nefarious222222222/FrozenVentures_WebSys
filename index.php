@@ -26,8 +26,8 @@
       <div class="nav-buttons">
         <button class="cs-button" onclick="window.location.href='pages/cart.html'"><i class="bx bxs-cart"></i></button>
         <button class="cs-button" onclick="window.location.href='pages/shop.html'"><i class="bx bxs-store-alt"></i></button>
-        <button class="sign-button" onclick="window.location.href='pages/sign/sign-in.html'">Sign In</button>
-        <button class="sign-button" onclick="window.location.href='pages/sign/sign-up.html'">Sign Up</button>
+        <button class="sign-button" onclick="window.location.href='pages/sign/sign-in.php'">Sign In</button>
+        <button class="sign-button" onclick="window.location.href='pages/sign/sign-up.php'">Sign Up</button>
       </div>
     </nav>
 

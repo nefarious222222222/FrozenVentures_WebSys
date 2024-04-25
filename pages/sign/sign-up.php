@@ -18,7 +18,7 @@
         </div>
 
         <div class="form-container">
-            <div class="title-container" onclick="window.location.href='../../../index.html'">
+            <div class="title-container" onclick="window.location.href='../../../index.php'">
                 <img src="../../assets/images/logo.png" alt="logo">
                 <h1>FrozenVentures</h1>
             </div>
@@ -45,7 +45,7 @@
 
             <div class="button-container">
                 <button>Sign Up</button>
-                <p>Already Have An Account? <a href="sign-in.html">Sign In</a></p>
+                <p>Already Have An Account? <a href="sign-in.php">Sign In</a></p>
             </div>
 
             <div class="other-sign">

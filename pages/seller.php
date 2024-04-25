@@ -40,17 +40,17 @@
       <div class="lists-container">
         <div class="first-list">
           <ul>
-            <li onclick="toggleDash()">
+            <li id="dashboardb">
               <a><i class="bx bxs-dashboard"></i>Dashboard</a
               >
             </li>
-            <li onclick="toggleOrder()">
+            <li id="orderb">
               <a><i class="bx bxs-package"></i>Order</a>
             </li>
-            <li onclick="toggleMessage()">
+            <li id="inboxb" >
               <a><i class="bx bxs-inbox"></i>Message Inbox</a>
             </li>
-            <li onclick="toggleInventory()">
+            <li id="inventoryb">
               <a><i class="bx bxs-box"></i>Inventory</a>
             </li>
           </ul>
@@ -58,7 +58,7 @@
 
         <div class="second-list">
           <ul>
-            <li onclick="toggleSettings()">
+            <li id="settingsb">
               <a><i class="bx bxs-cog"></i>Settings</a>
             </li>
             <li>
@@ -88,92 +88,6 @@
     <section class="settings-container" id="settings" style="display: none;">
       <h1>Settings</h1>
     </section>
-
-    <script>
-      function toggleDash() {
-        var dashboard = document.getElementById("dashboard");
-        dashboard.style.display = "flex";
-
-        var order = document.getElementById("order");
-        order.style.display = "none";
-
-        var message = document.getElementById("message-inbox");
-        message.style.display = "none";
-
-        var inventory = document.getElementById("inventory");
-        inventory.style.display = "none";
-
-        var settings = document.getElementById("settings");
-        settings.style.display = "none";
-      }
-
-      function toggleOrder() {
-        var dashboard = document.getElementById("dashboard");
-        dashboard.style.display = "none";
-
-        var order = document.getElementById("order");
-        order.style.display = "flex";
-
-        var message = document.getElementById("message-inbox");
-        message.style.display = "none";
-
-        var inventory = document.getElementById("inventory");
-        inventory.style.display = "none";
-
-        var settings = document.getElementById("settings");
-        settings.style.display = "none";
-      }
-
-      function toggleMessage() {
-        var dashboard = document.getElementById("dashboard");
-        dashboard.style.display = "none";
-
-        var order = document.getElementById("order");
-        order.style.display = "none";
-
-        var message = document.getElementById("message-inbox");
-        message.style.display = "flex";
-
-        var inventory = document.getElementById("inventory");
-        inventory.style.display = "none";
-
-        var settings = document.getElementById("settings");
-        settings.style.display = "none";
-      }
-
-      function toggleInventory() {
-        var dashboard = document.getElementById("dashboard");
-        dashboard.style.display = "none";
-
-        var order = document.getElementById("order");
-        order.style.display = "none";
-
-        var message = document.getElementById("message-inbox");
-        message.style.display = "none";
-
-        var inventory = document.getElementById("inventory");
-        inventory.style.display = "flex";
-
-        var settings = document.getElementById("settings");
-        settings.style.display = "none";
-      }
-
-      function toggleSettings() {
-        var dashboard = document.getElementById("dashboard");
-        dashboard.style.display = "none";
-
-        var order = document.getElementById("order");
-        order.style.display = "none";
-
-        var message = document.getElementById("message-inbox");
-        message.style.display = "none";
-
-        var inventory = document.getElementById("inventory");
-        inventory.style.display = "none";
-
-        var settings = document.getElementById("settings");
-        settings.style.display = "flex";
-      }
-    </script>
+    <script defer src="../script/sideBar.js"></script>
   </body>
 </html>
