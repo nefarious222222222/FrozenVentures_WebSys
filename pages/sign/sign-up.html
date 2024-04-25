@@ -53,7 +53,7 @@
               <i class="bx bxs-hide" onclick="hidePass()"></i>
             </div>
           </div>
-          <input type="password" />
+          <input class="password" type="password" />
         </div>
 
         <div class="button-container">
@@ -74,20 +74,22 @@
         </div>
       </div>
     </div>
-    
+
     <script>
       let show = document.querySelector(".bx-show");
       let hide = document.querySelector(".bxs-hide");
+      let pass = document.querySelector(".password");
 
       function showPass() {
         show.style.display = "none";
         hide.style.display = "block";
-        hide.style.position = "absolute";
+        pass.type = "text";
       }
 
       function hidePass() {
         hide.style.display = "none";
         show.style.display = "block";
+        pass.type = "password";
       }
     </script>
   </body>
