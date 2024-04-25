@@ -100,6 +100,33 @@ body {
       border: solid var(--color-violet) 2px;
       border-radius: 20px;
     }
+
+    input[type="password"] {
+      width: 230px;
+      padding-right: 30px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .bx-container {
+        font-size: 1.5rem;
+        color: var(--color-violet);
+
+        .bx {
+          position: absolute;
+          margin-left: -30px;
+          margin-top: 19px;
+          cursor: pointer;
+        }
+
+        .bxs-hide {
+          display: none;
+        }
+      }
+    }
   }
 
   .button-container {

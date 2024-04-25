@@ -22,23 +22,22 @@
                 <img src="../../assets/images/logo.png" alt="logo">
                 <h1>FrozenVentures</h1>
             </div>
-            <form action="" method="post" id="form">
+
             <div class="input-container">
                 <h4>Username:</h4>
-                <input type="text" name="username">
+                <input type="text">
             </div>
 
             <div class="input-container">
                 <h4>Password:</h4>
-                <input type="password" name="password">
+                <input type="text">
             </div>
-     
-            </form>
+
             <div class="button-container">
-                <button class="submit" >Sign In</button>
-                <p>Dont Have An Account? <a href="sign-Up.php">Sign Up</a></p>
+                <button>Sign In</button>
+                <p>Dont Have An Account? <a href="sign-Up.html">Sign Up</a></p>
             </div>
-          
+
             <div class="other-sign">
                 <div class="text-container">
                     <div class="line"></div>
@@ -52,6 +51,5 @@
             </div>
         </div>
     </div>
-    <script defer src="../../assets/scripts/login.js"></script>
 </body>
 </html>
