@@ -42,17 +42,18 @@
 
         <div class="input-container">
           <h4>Username:</h4>
-          <label>
-            <input type="text" />
-          </label>
+          <input type="text" />
         </div>
 
         <div class="input-container">
-          <h4>Password:</h4>
-          <label>
-            <input type="password" />
-            <i class="bx bx-show"></i>
-          </label>
+          <div class="container">
+            <h4>Password:</h4>
+            <div class="bx-container">
+              <i class="bx bx-show" onclick="showPass()"></i>
+              <i class="bx bxs-hide" onclick="hidePass()"></i>
+            </div>
+          </div>
+          <input type="password" />
         </div>
 
         <div class="button-container">
@@ -73,5 +74,21 @@
         </div>
       </div>
     </div>
+    
+    <script>
+      let show = document.querySelector(".bx-show");
+      let hide = document.querySelector(".bxs-hide");
+
+      function showPass() {
+        show.style.display = "none";
+        hide.style.display = "block";
+        hide.style.position = "absolute";
+      }
+
+      function hidePass() {
+        hide.style.display = "none";
+        show.style.display = "block";
+      }
+    </script>
   </body>
 </html>

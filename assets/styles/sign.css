@@ -101,28 +101,30 @@ body {
       border-radius: 20px;
     }
 
-    label {
+    input[type="password"] {
+      width: 230px;
+      padding-left: 30px;
+    }
 
-      input[type="password"] {
-        width: 230px;
-        padding-right: 30px;
-      }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-      .button-container {
-        position: absolute;
-        top: 44%;
-        right: 21%;
+      .bx-container {
         font-size: 1.5rem;
-        transition: all 0.3s ease;
-      }
-      
-      .bx {
-        position: absolute;
-        cursor: pointer;
-      }
+        color: var(--color-violet);
 
-      .bxs-hide {
-        display: none;
+        .bx {
+          position: absolute;
+          margin-left: -30px;
+          margin-top: 19px;
+          cursor: pointer;
+        }
+
+        .bxs-hide {
+          display: none;
+        }
       }
     }
   }
