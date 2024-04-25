@@ -24,10 +24,10 @@
       </div>
 
       <div class="nav-buttons">
-        <button class="cs-button" onclick="window.location.href='pages/cart.html'"><i class="bx bxs-cart"></i></button>
-        <button class="cs-button" onclick="window.location.href='pages/shop.html'"><i class="bx bxs-store-alt"></i></button>
-        <button class="sign-button" onclick="window.location.href='pages/sign/sign-in.php'">Sign In</button>
-        <button class="sign-button" onclick="window.location.href='pages/sign/sign-up.php'">Sign Up</button>
+        <button class="cs-button cart"><i class="bx bxs-cart"></i></button>
+        <button class="cs-button store"><i class="bx bxs-store-alt"></i></button>
+        <button class="sign-button login1">Sign In</button>
+        <button class="sign-button signup1">Sign Up</button>
       </div>
     </nav>
 
@@ -72,7 +72,7 @@
 
           <div class="button-container">
             <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
-            <button class="buy-button" onclick="window.location.href='pages/order.html'">Buy Now</button>
+            <button class="buy-button" onclick="window.location.href='../pages/order.php'">Buy Now</button>
           </div>
         </div>
 
@@ -87,7 +87,7 @@
 
           <div class="button-container">
             <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
-            <button class="buy-button" onclick="window.location.href='pages/order.html'">Buy Now</button>
+            <button class="buy-button">Buy Now</button>
           </div>
         </div>
 
@@ -102,7 +102,7 @@
 
           <div class="button-container">
             <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
-            <button class="buy-button" onclick="window.location.href='pages/order.html'">Buy Now</button>
+            <button class="buy-button">Buy Now</button>
           </div>
         </div>
 
@@ -117,7 +117,7 @@
 
           <div class="button-container">
             <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
-            <button class="buy-button" onclick="window.location.href='pages/order.html'">Buy Now</button>
+            <button class="buy-button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -208,5 +208,6 @@
         </div>
       </div>
     </footer>
+    <script defer src = "assets/scripts/index.js"></script>
   </body>
 </html>

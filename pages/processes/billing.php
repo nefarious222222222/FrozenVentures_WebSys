@@ -1,12 +1,3 @@
-<?php
-session_start();
-// Check if the user is logged in
-if (!isset($_SESSION['valid'])) {
-    header("Location: ../sign/sign-in.php");
-    exit();
-}
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +16,7 @@ if (!isset($_SESSION['valid'])) {
     <nav>
       <div
         class="title-container"
-        onclick="window.location.href='../../../index.html'"
+        onclick="window.location.href='../../index.php'"
       >
         <img src="../../assets/images/logo.png" alt="Logo" />
         <h1>FrozenVentures</h1>
@@ -37,24 +28,24 @@ if (!isset($_SESSION['valid'])) {
       </div>
 
       <div class="nav-buttons">
-        <button class="cs-button" onclick="window.location.href='cart.html'">
+        <button class="cs-button" onclick="window.location.href='../cart.php'">
           <i class="bx bxs-cart"></i>
         </button>
         <button
           class="cs-button"
-          onclick="window.location.href='../../../index.html'"
+          onclick="window.location.href='../../index.php'"
         >
           <i class="bx bxs-home-alt-2"></i>
         </button>
         <button
           class="sign-button"
-          onclick="window.location.href='../pages/sign-in.html'"
+          onclick="window.location.href='../../pages/sign/sign-in.php'"
         >
           Sign In
         </button>
         <button
           class="sign-button"
-          onclick="window.location.href='../pages/sign-up.html'"
+          onclick="window.location.href='../../pages/sign/sign-up.php'"
         >
           Sign Up
         </button>
@@ -64,7 +55,7 @@ if (!isset($_SESSION['valid'])) {
     <div class="billing-container">
         <div class="header-container">
             <h1>Billing</h1>
-            <button onclick="window.location.href='order.html'"><i class='bx bxs-left-arrow-alt'></i> Back to Order</button>
+            <button onclick="window.location.href='order.php'"><i class='bx bxs-left-arrow-alt'></i> Back to Order</button>
         </div>
       
       <div class="left-container">

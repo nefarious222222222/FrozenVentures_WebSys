@@ -15,7 +15,7 @@
     <nav>
       <div
         class="title-container"
-        onclick="window.location.href='../../../index.html'"
+        onclick="window.location.href='../../index.php'"
       >
         <img src="../../assets/images/logo.png" alt="Logo" />
         <h1>FrozenVentures</h1>
@@ -27,24 +27,24 @@
       </div>
 
       <div class="nav-buttons">
-        <button class="cs-button" onclick="window.location.href='cart.html'">
+        <button class="cs-button" onclick="window.location.href='../cart.php'">
           <i class="bx bxs-cart"></i>
         </button>
         <button
           class="cs-button"
-          onclick="window.location.href='../../../index.html'"
+          onclick="window.location.href='../../index.php'"
         >
           <i class="bx bxs-home-alt-2"></i>
         </button>
         <button
           class="sign-button"
-          onclick="window.location.href='../pages/sign-in.html'"
+          onclick="window.location.href='../pages/sign-in.php'"
         >
           Sign In
         </button>
         <button
           class="sign-button"
-          onclick="window.location.href='../pages/sign-up.html'"
+          onclick="window.location.href='../pages/sign-up.php'"
         >
           Sign Up
         </button>
@@ -91,8 +91,8 @@
         </div>
 
         <div class="button-container">
-            <button onclick="window.location.href='cart.html'">Add to Cart</button>
-            <button onclick="window.location.href='billing.html'">Buy Now</button>
+            <button onclick="window.location.href='../cart.php'">Add to Cart</button>
+            <button onclick="window.location.href='../processes/billing.php'">Buy Now</button>
         </div>
       </div>
     </div>

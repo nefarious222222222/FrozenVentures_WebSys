@@ -15,7 +15,6 @@
     <nav>
       <div
         class="title-container"
-        onclick="window.location.href='../../index.html'"
       >
         <img src="../assets/images/logo.png" alt="Logo" />
         <h1>FrozenVentures</h1>
@@ -29,23 +28,23 @@
       <div class="nav-buttons">
         <button
           class="cs-button"
-          onclick="window.location.href='../../index.html'"
+          onclick="window.location.href='../index.php'"
         >
           <i class="bx bxs-home-alt-2"></i>
         </button>
-        <button class="cs-button" onclick="window.location.href='shop.html'">
+        <button class="cs-button" onclick="window.location.href='shop.php'">
           <i class="bx bxs-store-alt"></i>
         </button>
 
         <button
           class="sign-button"
-          onclick="window.location.href='sign/sign-in.html'"
+          onclick="window.location.href='sign/sign-in.php'"
         >
           Sign In
         </button>
         <button
           class="sign-button"
-          onclick="window.location.href='sign/sign-up.html'"
+          onclick="window.location.href='sign/sign-up.php'"
         >
           Sign Up
         </button>
@@ -103,33 +102,30 @@
         <h2>Choose Shipping Mode:</h2>
 
         <form class="button-container">
-          <label>
-            <input type="radio" name="shipping" value="pickup" />
-            Store Pick Up • <span>Free</span>
-          </label>
-          <label>
-            <input type="radio" name="shipping" value="delivery" />
-            Delivery • <span>$2.99</span>
-          </label>
+          <input type="radio" name="shipping" value="pickup" id="pick-up" />
+          <label for="pick-up">Store Pick Up<span>•</span><span>Free</span></label>
+
+          <input type="radio" name="shipping" value="delivery" id="delivery" />
+          <label for="delivery">Delivery<span>•</span><span>$2.99</span></label>
         </form>
       </div>
 
       <div class="total-container">
         <div class="sub-total">
-            <p class="label">Sub Total</p>
-            <p class="price">$69.99</p>
+          <p class="label">Sub Total</p>
+          <p class="price">$69.99</p>
         </div>
 
         <div class="shipping">
-            <p class="label">Shipping</p>
-            <p class="price">$2.99</p>
+          <p class="label">Shipping</p>
+          <p class="price">$2.99</p>
         </div>
 
         <div class="line"></div>
 
         <div class="total">
-            <p class="label">Total</p>
-            <p class="price">$72.98</p>
+          <p class="label">Total</p>
+          <p class="price">$72.98</p>
         </div>
 
         <button>Check Out Now</button>
@@ -137,50 +133,55 @@
     </section>
 
     <footer>
-        <div class="about-container">
-          <div class="logo-container">
-            <img src="../assets/images/logo.png" alt="Logo" />
-            <h1>FrozenVentures</h1>
+      <div class="about-container">
+        <div class="logo-container">
+          <img src="../assets/images/logo.png" alt="Logo" />
+          <h1>FrozenVentures</h1>
+        </div>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          neque veniam perferendis nihil fuga, corporis quidem voluptatum iusto,
+          modi quod minus mollitia maxime inventore ad recusandae iure deserunt
+          laborum sint!
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <h4>Contact Us</h4>
+
+        <p>#420 Weederoo Street Showbu City</p>
+
+        <p>frozenventures@icecream.com</p>
+
+        <p>+63 9069420911</p>
+      </div>
+
+      <div class="social-container">
+        <h4>Follow Us</h4>
+
+        <div class="container">
+          <div class="fb-container">
+            <i class="bx bxl-facebook-square"></i>
+            <p>@FrozenVentures</p>
           </div>
-  
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            neque veniam perferendis nihil fuga, corporis quidem voluptatum iusto,
-            modi quod minus mollitia maxime inventore ad recusandae iure deserunt
-            laborum sint!
-          </p>
-        </div>
-  
-        <div class="contact-container">
-          <h4>Contact Us</h4>
-  
-          <p>#420 Weederoo Street Showbu City</p>
-  
-          <p>frozenventures@icecream.com</p>
-  
-          <p>+63 9069420911</p>
-        </div>
-  
-        <div class="social-container">
-          <h4>Follow Us</h4>
-  
-          <div class="container">
-            <div class="fb-container">
-              <i class="bx bxl-facebook-square"></i>
-              <p>@FrozenVentures</p>
-            </div>
-  
-            <div class="ig-container">
-              <i class="bx bxl-instagram-alt"></i>
-              <p>@FrozenVentures</p>
-            </div>
-  
-            <div class="twitter-container">
-              <i class="bx bxl-twitter"></i>
-              <p>@FrozenVentures</p>
-            </div>
+
+          <div class="ig-container">
+            <i class="bx bxl-instagram-alt"></i>
+            <p>@FrozenVentures</p>
+          </div>
+
+          <div class="twitter-container">
+            <i class="bx bxl-twitter"></i>
+            <p>@FrozenVentures</p>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
+    <script>
+      document.querySelector('.title-container').addEventListener('click', ()=>{
+        window.location.href = "../index.php";
+      })
+    </script>
   </body>
 </html>

@@ -17,24 +17,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         if ($pass[$key] === $password) {
             $role = $roles[$key];
             if ($role === "admin") {
+                $_SESSION["admin"] = $role;
                 header("Location: ../pages/processes/billing.php");
                 exit();
             } elseif ($role === "seller") {
+                $_SESSION["seller"] = $role;
                 header("Location: ../pages/seller.php");
                 exit();
             } elseif ($role === "customer") {
+                $_SESSION["customer"] = $role;
                 header("Location: customer_page.php");
                 exit();
             }
         } else {
-            echo "<h3>Incorrect password.</h3> <br/>
+            echo "<h3>Username or password are incorrect.</h3> <br/>
             <a href='../pages/sign/sign-in.php'>Go back<a/>
             ";
         }
     } else {
-        echo "<h3>Account does not exist.</h3> <br/>
+        echo "<h3>Username or password are incorrect.</h3> <br/>
         <a href='../pages/sign/sign-in.php'>Go back<a/>";
     }
 }
 
-?>        
+?>

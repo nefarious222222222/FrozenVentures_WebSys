@@ -15,8 +15,8 @@
     <nav>
       <div
         class="title-container"
-        onclick="window.location.href='../../index.html'"
-      >
+        onclick="window.location.href='../index.php'"
+      
         <img src="../assets/images/logo.png" alt="Logo" />
         <h1>FrozenVentures</h1>
       </div>
@@ -27,24 +27,24 @@
       </div>
 
       <div class="nav-buttons">
-        <button class="cs-button" onclick="window.location.href='cart.html'">
+        <button class="cs-button" onclick="window.location.href='cart.php'">
           <i class="bx bxs-cart"></i>
         </button>
         <button
           class="cs-button"
-          onclick="window.location.href='../../index.html'"
+          onclick="window.location.href='../index.php'"
         >
           <i class="bx bxs-home-alt-2"></i>
         </button>
         <button
           class="sign-button"
-          onclick="window.location.href='sign/sign-in.html'"
+          onclick="window.location.href='sign/sign-in.php'"
         >
           Sign In
         </button>
         <button
           class="sign-button"
-          onclick="window.location.href='sign/sign-up.html'"
+          onclick="window.location.href='sign/sign-up.php'"
         >
           Sign Up
         </button>
@@ -87,7 +87,7 @@
 
         <div class="button-container">
           <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
-          <button class="buy-button" onclick="window.location.href='order.html'">Buy Now</button>
+          <button class="buy-button" onclick="window.location.href='order.php'">Buy Now</button>
         </div>
       </div>
 
@@ -102,7 +102,7 @@
 
         <div class="button-container">
           <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
-          <button class="buy-button" onclick="window.location.href='order.html'">Buy Now</button>
+          <button class="buy-button" onclick="window.location.href='order.php'">Buy Now</button>
         </div>
       </div>
 
@@ -117,7 +117,7 @@
 
         <div class="button-container">
           <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
-          <button class="buy-button" onclick="window.location.href='order.html'">Buy Now</button>
+          <button class="buy-button" onclick="window.location.href='order.php'">Buy Now</button>
         </div>
       </div>
 
@@ -132,7 +132,7 @@
 
         <div class="button-container">
           <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
-          <button class="buy-button" onclick="window.location.href='order.html'">Buy Now</button>
+          <button class="buy-button" onclick="window.location.href='order.php'">Buy Now</button>
         </div>
       </div>
     </section>
@@ -201,4 +201,11 @@
       </div>
     </footer>
   </body>
+  <script>
+    document.querySelectorAll('.buy-button').forEach(button => {
+    button.addEventListener('click', () => {
+        window.location.href = "../pages/processes/order.php";
+    });
+});
+  </script>
 </html>

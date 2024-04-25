@@ -10,7 +10,7 @@
   --color-dark-gray: #474747;
 
   --color-primary-text: #111111;
-  --color-secondary-text: #363636;
+  --color-secondary-text: #777777;
 
   --font-primary: "Open Sans";
   --font-secondary: "Raleway";
@@ -267,14 +267,63 @@ nav {
   align-items: center;
   justify-content: space-between;
 
+  h2 {
+    font-size: 2rem;
+  }
+
   form {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 20px;
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--color-secondary-text);
+  }
+  
+  .button-container {
+    input[type="radio"] {
+      display: none;
+    }
+
+    label {
+      position: relative;
+      color: var(--color-violet);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 20px;
+      border: solid 2px var(--color-violet);
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+
+      span {
+        font-weight: 800;
+      }
+    }
+
+    label:before {
+      content: '';
+      height: 15px;
+      width: 15px;
+      border: solid 2px var(--color-violet);
+      border-radius: 50%;
+    }
+
+    input[type="radio"]:checked + label:before {
+      width: 15px;
+      height: 15px;
+      border: 3px solid var(--color-pale-violet);
+      background-color: var(--color-violet);
+    }
+
+    input[type="radio"]:checked + label {
+      padding-left: 10px;
+      background-color: var(--color-violet);
+      color: white;
+    }
   }
 }
 
