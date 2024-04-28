@@ -2,8 +2,8 @@
 session_start();
 
 if (!isset($_SESSION['admin'])) {
-    header("Location: ../sign/sign-in.php");
+    echo "<script>alert('You need to sign in an admin account!');</script>";
+    echo "<script>setTimeout(function() { window.location.href = '../../index.php'; }, 100);</script>";
     exit;
 }
-
 ?>
