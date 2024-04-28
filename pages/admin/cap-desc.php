@@ -1,3 +1,7 @@
+<?php
+require("../../server/checksign.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,7 +31,7 @@
             </a>
           </li>
           <li>
-            <a href="admin.html">
+            <a href="admin.php">
               <span class="icon"><i class="bx bxs-check-shield"></i></span>
               <span class="title">Admin Page</span>
             </a>
@@ -39,19 +43,19 @@
             </a>
           </li>
           <li>
-            <a href="members.html">
+            <a href="members.php">
               <span class="icon"><i class="bx bxs-group"></i></span>
               <span class="title">Members</span>
             </a>
           </li>
           <li>
-            <a href="sys-capab.html">
+            <a href="sys-capab.php">
               <span class="icon"><i class="bx bxs-cuboid"></i></span>
               <span class="title">System Capabilities</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="../../server/signout.php">
               <span class="icon"><i class="bx bx-log-out"></i></span>
               <span class="title">Sign Out</span>
             </a>

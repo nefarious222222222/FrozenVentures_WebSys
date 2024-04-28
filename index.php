@@ -1,5 +1,9 @@
+<?php 
+require ("server/usersign.php")
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,10 +28,9 @@
       </div>
 
       <div class="nav-buttons">
-        <button class="cs-button" onclick="window.location.href='pages/cart.html'"><i class="bx bxs-cart"></i></button>
-        <button class="cs-button" onclick="window.location.href='pages/shop.html'"><i class="bx bxs-store-alt"></i></button>
-        <button class="sign-button" onclick="window.location.href='pages/sign/sign-in.html'">Sign In</button>
-        <button class="sign-button" onclick="window.location.href='pages/sign/sign-up.html'">Sign Up</button>
+        <button class="cs-button cart ciButton"><i class="bx bxs-cart"></i></button>
+        <button class="cs-button store siButton"><i class="bx bxs-store-alt"></i></button>
+        <?php echo $errorDiv; ?>
       </div>
     </nav>
 
@@ -71,8 +74,8 @@
           </div>
 
           <div class="button-container">
-            <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
-            <button class="buy-button" onclick="window.location.href='pages/order.html'">Buy Now</button>
+            <button class="cart-button ciButton"><i class="bx bxs-cart-add"></i></button>
+            <button class="buy-button biButton">Buy Now</button>
           </div>
         </div>
 
@@ -86,8 +89,8 @@
           </div>
 
           <div class="button-container">
-            <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
-            <button class="buy-button" onclick="window.location.href='pages/order.html'">Buy Now</button>
+            <button class="cart-button ciButton"><i class="bx bxs-cart-add"></i></button>
+            <button class="buy-button biButton">Buy Now</button>
           </div>
         </div>
 
@@ -101,8 +104,8 @@
           </div>
 
           <div class="button-container">
-            <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
-            <button class="buy-button" onclick="window.location.href='pages/order.html'">Buy Now</button>
+            <button class="cart-button ciButton"><i class="bx bxs-cart-add"></i></button>
+            <button class="buy-button biButton">Buy Now</button>
           </div>
         </div>
 
@@ -116,8 +119,8 @@
           </div>
 
           <div class="button-container">
-            <button class="cart-button"><i class="bx bxs-cart-add"></i></button>
-            <button class="buy-button" onclick="window.location.href='pages/order.html'">Buy Now</button>
+            <button class="cart-button ciButton"><i class="bx bxs-cart-add"></i></button>
+            <button class="buy-button biButton">Buy Now</button>
           </div>
         </div>
       </div>
@@ -208,5 +211,6 @@
         </div>
       </div>
     </footer>
+    <script defer src = "assets/js/index-router.js"></script>
   </body>
 </html>

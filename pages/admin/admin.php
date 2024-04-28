@@ -1,3 +1,7 @@
+<?php
+require("../../server/checksign.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,25 +37,25 @@
             </a>
           </li>
           <li>
-            <a href="cap-desc.html">
+            <a href="cap-desc.php">
               <span class="icon"><i class='bx bxs-mobile' ></i></span>
               <span class="title">Capstone Description</span>
             </a>
           </li>
           <li>
-            <a href="members.html">
+            <a href="members.php">
               <span class="icon"><i class="bx bxs-group"></i></span>
               <span class="title">Members</span>
             </a>
           </li>
           <li>
-            <a href="cap-desc.html">
+            <a href="cap-desc.php">
               <span class="icon"><i class='bx bxs-cuboid' ></i></span>
               <span class="title">System Capabilities</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="../../server/signout.php">
               <span class="icon"><i class="bx bx-log-out"></i></span>
               <span class="title">Sign Out</span>
             </a>
@@ -67,7 +71,7 @@
           </div>
   
           <div class="title">
-            <h2>Admin Page</h2>
+            <h2>FrozenVentures</h2>
           </div>
   
           <div class="user">
@@ -108,5 +112,6 @@
       }
       list.forEach((item) => item.addEventListener("mouseover", activeLink));
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
