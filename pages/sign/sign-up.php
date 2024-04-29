@@ -61,5 +61,6 @@
             </div>
         </div>
     </div>
+    <script defer src="../assets/scripts/login.js"></script>
 </body>
 </html>

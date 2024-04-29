@@ -29,7 +29,7 @@
           <img src="../../assets/images/logo.png" alt="logo" />
           <h1>FrozenVentures</h1>
         </div>
-    <form action="" method="post" id="form">
+    <form action="" method="get" id="form">
     <div class="input-container">
           <h4>Username:</h4>
           <input type="text" name="username" />
